@@ -1,0 +1,218 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+
+    --black: hsl(200, 100%, 5%);
+    --bg-color: hsla(200, 100%, 5%, 0.05);
+
+    --blue: hsl(200, 100%, 50%);
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+html {
+    --main-accent: var(--blue);
+    --sub-accent: var(--blue);
+    --text-color: var(--black);
+
+    scroll-behavior: smooth;
+    text-size-adjust: 100%;
+}
+
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    background-color: var(--white);
+    margin: 30px auto 0;
+    padding: 50px;
+    width: 960px;
+}
+
+main > header {
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 0;
+}
+
+h1 .svg {
+    display: block;
+    margin: 0 auto;
+}
+
+h3 {
+    margin: -12px 0 0;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px auto 0;
+    padding: 0;
+    list-style-type: none;
+    max-width: 480px;
+}
+
+.contact-details li {
+    margin-bottom: 5px;
+}
+
+.contact-details li:not(:first-child):not(:nth-child(3)) {
+    margin-left: 20px;
+}
+
+.contact-details strong {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+main > header p {
+    margin: 20px 0 0;
+}
+
+main section {
+    margin-top: 40px;
+}
+
+h2 {
+    margin: 0;
+    letter-spacing: 0.3em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--main-accent);
+}
+
+.list {
+    margin: 0 auto;
+    width: max-content;
+    max-width: 100%;
+}
+
+.list-item {
+    margin-top: 20px;
+    display: flex;
+}
+
+.timeline time {
+    width: 60px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.list .list-details {
+    position: relative;
+    padding-left: 60px;
+}
+
+.timeline .list-item:not(:last-child) .list-details::before {
+    content: "";
+    background-color: hsl(200, 100%, 85%);
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    right: calc(100% - 60px);
+    margin: 0 auto;
+    width: 1px;
+    height: calc(100% + 20px);
+}
+
+.list .list-details::after {
+    content: "";
+    background-color: var(--main-accent);
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    right: calc(100% - 60px);
+    margin: 0 auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.list-details .title {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.list-details .title span {
+    text-transform: none;
+}
+
+.list-details p {
+    margin: 5px 0 0;
+    font-size: 12px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-gap: 30px;
+}
+
+.education .list-item {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    text-align: center;
+}
+
+.skills .list-details a,
+.projects .list-item:last-child a {
+    font-weight: 700;
+}
+
+.projects .list-item:last-child .list-details::after,
+.references .list-details::after {
+    content: none;
+}
+
+.references .list {
+    display: grid;
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+}
+
+.references .list-item {
+    display: block;
+}
+
+.references .list-details {
+    padding-left: 0;
+}
+
+.references p {
+    margin: 20px 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}

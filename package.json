@@ -1,0 +1,26 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Source Code for LouiseHermosa.com resume page",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bower": "bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayzces/resume.git"
+  },
+  "keywords": [
+    "resume"
+  ],
+  "author": "Mary Louise B. Hermosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jayzces/resume/issues"
+  },
+  "homepage": "https://github.com/jayzces/resume#readme",
+  "devDependencies": {
+    "bower": "^1.8.8"
+  }
+}

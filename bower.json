@@ -1,0 +1,24 @@
+{
+  "name": "resume",
+  "description": "Source Code for LouiseHermosa.com resume page",
+  "main": "script.js",
+  "authors": [
+    "Mary Louise B. Hermosa"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "resume"
+  ],
+  "homepage": "https://github.com/jayzces/resume",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "inline-svg": "^2.2.1"
+  }
+}
