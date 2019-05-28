@@ -2,21 +2,23 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8" />
-        <!-- <meta name="author" content="Mary Louise Hermosa" />
-        <meta name="description" content="Mary Louise Hermosa's Personal Resume" /> -->
+        <meta name="author" content="Mary Louise Hermosa" />
+        <meta name="description" content="Mary Louise Hermosa's Personal Resume" />
 
         <link rel="preload" href="assets/styles.css" as="style" />
+        <link rel="preload" href="assets/print.css" as="style" />
         <link rel="preload" href="bower_components/inline-svg/dist/inlineSVG.min.js" as="script" />
         <link rel="preload" href="script.js" as="script" />
 
         <link href="https://fonts.googleapis.com/css?family=Assistant:400,700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="assets/styles.css" type="text/css" />
+        <link media="print" rel="stylesheet" href="assets/print.css" type="text/css" />
 
         <title>Resume | LouiseHermosa.com</title>
     </head>
     <body>
         <main>
-            <header>
+            <header class="page-header">
                 <h1 id="name">Mary Louise Hermosa
                     <img src="assets/logo_center.svg" class="svg" width="323" height="99" alt="Hermosa Mary Louise" />
                 </h1>
@@ -41,7 +43,9 @@
                         <div class="list-details">
                             <div class="title">Web Designer and Front End Developer <span>(Full-time)</span></div>
                             <div class="subtitle">ChannelFix.com, LLC</div>
-                            <p>Conceptualize and design features for multiple ChannelFix projects, and created the templates for backend integration.</p>
+                            <p>For multiple ChannelFix projects, conceptualize and design features, such as feed widgets, action buttons and floating action buttons, informational pages and components, inboxes and messaging, and many more using design tools like Figma.</p>
+                            <p>Create Mustache templates (before) and Sass styles based on approved designs, making sure everything is responsive and can be properly used and accessed on smaller devices.</p>
+                            <p>Refactoring existing mustache templates (present) into Vue.js components, making sure to keep the responsiveness and the functionality the same. Includes accessing API inside VueX stores to render database data into the components, and reworking existing JS code to fit and make use of the Vue.js instance lifecycle.</p>
                         </div>
                     </div>
                     <div class="list-item">
@@ -49,7 +53,7 @@
                         <div class="list-details">
                             <div class="title">Front End Developer <span>(Part-time)</span></div>
                             <div class="subtitle">ChannelFix.com, LLC</div>
-                            <p>Created and maintained templates for one ChannelFix project.</p>
+                            <p>Created and maintained HTML5 templates and Less styles for multiple pages and features for a ChannelFix project. Also includes minor template bugfixes.</p>
                         </div>
                     </div>
                     <div class="list-item">
@@ -111,12 +115,6 @@
                                     <p>Including the <a href="https://www.djangoproject.com/" target="_blank">Django Web Framework.</a></p>
                                 </div>
                             </div>
-                            <div class="list-item">
-                                <div class="list-details">
-                                    <div class="title"><a href="https://git-scm.com/" target="_blank">Git</a></div>
-                                    <p>Version Control</p>
-                                </div>
-                            </div>
                         </div>
                     </section>
                 </div>
@@ -129,14 +127,14 @@
                                 <div class="list-details">
                                     <div class="title"><a href="https://louisehermosa.com" target="_blank">LouiseHermosa.com</a></div>
                                     <div class="subtitle">Source code for LouiseHermosa.com</div>
-                                    <p>Applies CSS Prefers-color-scheme for variable theming based on OS (Mac) theme preferences. Also uses Github API to display and list personal Github projects.</p>
+                                    <p>Applies prefers-color-scheme for variable theming based on OS (Mac) theme preferences. Also uses Github API to display and list personal Github projects.</p>
                                 </div>
                             </div>
                             <div class="list-item">
                                 <div class="list-details">
                                     <div class="title"><a href="https://battling-page.louisehermosa.com/" target="_blank">Battling Page</a></div>
                                     <div class="subtitle">Mobile demo for a Battling Page Design made in Vue.js</div>
-                                    <p>First big Vue.js project, includes routes for single page browsing, and global event listeners for inter-component communication. Makes use of Javascript touch events for additional app interaction.</p>
+                                    <p>Applies single page browsing, and global event listeners for inter-component communication. Makes use of Javascript touch events for app interaction.</p>
                                 </div>
                             </div>
                             <div class="list-item">
@@ -150,7 +148,7 @@
                                 <div class="list-details">
                                     <div class="title"><a href="https://vote-button-concepts.louisehermosa.com/" target="_blank">Vote Button Concepts</a></div>
                                     <div class="subtitle">Live demo of an idea for ChannelFix Voting buttons.</div>
-                                    <p>HTML and CSS only implementation of waves to visually imply availability of a button. Also applies a simple floating vote counter based on Medium’s claps counter.</p>
+                                    <p>HTML and CSS only implementation of waves to visually imply availability of a button. Also applies a floating vote counter based on Medium’s claps counter.</p>
                                 </div>
                             </div>
                             <div class="list-item">

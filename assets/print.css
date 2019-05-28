@@ -1,0 +1,16 @@
+@page {
+    margin: 0;
+    size: auto;
+}
+
+body {
+    background-color: transparent;
+}
+
+main {
+    padding: 10px 50px;
+}
+
+footer {
+    display: none;
+}
