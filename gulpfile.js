@@ -50,7 +50,7 @@ function compileHTML() {
 
 function watchFiles() {
     watch(
-        [files.cssPaths, files.jsPaths],
+        [files.cssPaths, files.jsPaths, files.htmlPaths],
         parallel(compileCSS, compileJS, compileHTML)
     )
 }
