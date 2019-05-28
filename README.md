@@ -2,6 +2,8 @@ Personal Resume
 ===============
 Source Code for LouiseHermosa.com resume page.
 
+![preview](preview.png)
+
 ## For Development
 The following must be installed globally
 - `npm i -g bower` - [Bower](https://bower.io/) to rewrite dependencies in `Bower.json`
