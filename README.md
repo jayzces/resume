@@ -11,7 +11,7 @@ The following must be installed globally
 - `npm i -g bower` - [Bower](https://bower.io/) to rewrite dependencies in `bower.json`
 - `npm i -g gulp-cli` - [Gulp CLI](https://gulpjs.com/) to run Gulp 4
 
-```
+```bash
 # install dependencies
 npm install
 npm run bower
@@ -24,7 +24,7 @@ npm run serve dist
 ```
 
 ## For Production
-```
+```bash
 npm install && npm run prod
 ```
 
