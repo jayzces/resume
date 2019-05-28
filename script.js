@@ -19,5 +19,3 @@ const insertReference = () => {
         return 'Inserted Reference'
     }
 }
-
-insertReference()
