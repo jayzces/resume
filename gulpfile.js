@@ -6,6 +6,7 @@ const postcss = require('gulp-postcss')
 const replace = require('gulp-replace')
 const sourcemaps = require('gulp-sourcemaps')
 const terser = require('gulp-terser')
+const browserSync = require('browser-sync').create()
 
 const files = {
     imageAssets: 'assets/logo_center.svg',
@@ -17,6 +18,7 @@ const files = {
 function copyImageAssets() {
     return src(files.imageAssets)
         .pipe(dest('dist/assets'))
+        .pipe(browserSync.stream())
 }
 
 function compileCSS() {
@@ -27,6 +29,7 @@ function compileCSS() {
         ]))
         .pipe(sourcemaps.write('.'))
         .pipe(dest('dist/assets'))
+        .pipe(browserSync.stream())
 }
 
 function compileJS() {
@@ -35,6 +38,7 @@ function compileJS() {
             ecma: 6
         }))
         .pipe(dest('dist'))
+        .pipe(browserSync.stream())
 }
 
 const cbstring = new Date().getTime()
@@ -46,6 +50,7 @@ function compileHTML() {
         }))
         .pipe(replace(/cb=\d+/g, `cb=${cbstring}`))
         .pipe(dest('dist'))
+        .pipe(browserSync.stream())
 }
 
 function watchFiles() {
@@ -55,6 +60,14 @@ function watchFiles() {
     )
 }
 
+function initServer() {
+    browserSync.init({
+        server: {
+            baseDir: "./dist/"
+        }
+    })
+}
+
 exports.default = series(
     copyImageAssets,
     parallel(compileCSS, compileJS, compileHTML)
@@ -62,5 +75,5 @@ exports.default = series(
 exports.develop = series(
     copyImageAssets,
     parallel(compileCSS, compileJS, compileHTML),
-    watchFiles
+    parallel(watchFiles, initServer)
 )
