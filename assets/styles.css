@@ -4,7 +4,8 @@
     --black: hsl(200, 100%, 5%);
     --bg-color: hsla(200, 100%, 5%, 0.05);
 
-    --blue: hsl(200, 100%, 50%);
+    --blue:     hsl(200, 100%, 50%);
+    --blue-l85: hsl(200, 100%, 85%);
 }
 
 
@@ -17,7 +18,7 @@
 
 html {
     --main-accent: var(--blue);
-    --sub-accent: var(--blue);
+    --sub-accent: var(--blue-l85);
     --text-color: var(--black);
 
     scroll-behavior: smooth;
@@ -42,8 +43,8 @@ a {
 
 main {
     background-color: var(--white);
-    margin: 30px auto 30px;
-    padding: 50px 50px 30px;
+    margin: 30px auto;
+    padding: 30px 50px;
     width: 960px;
 }
 
@@ -120,7 +121,7 @@ h2 {
 }
 
 .timeline time {
-    width: 60px;
+    width: 70px;
     text-align: right;
     font-size: 12px;
     flex-shrink: 0;
@@ -133,14 +134,14 @@ h2 {
 
 .timeline .list-item:not(:last-child) .list-details::before {
     content: "";
-    background-color: hsl(200, 100%, 85%);
+    background-color: var(--sub-accent);
     display: block;
     position: absolute;
     top: 4px;
     left: 0;
     right: calc(100% - 60px);
     margin: 0 auto;
-    width: 1px;
+    width: 2px;
     height: calc(100% + 15px);
 }
 
