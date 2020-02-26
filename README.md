@@ -16,11 +16,8 @@ The following must be installed globally
 npm install
 npm run bower
 
-# includes a watcher
+# compile files, run local server, and watch files for changes
 gulp develop
-
-# run local server
-npm run serve dist
 ```
 
 ## For Production
