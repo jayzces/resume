@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "bower": "bower install",
-    "prod": "bower install && gulp"
+    "prod": "bower install && gulp",
+    "develop": "gulp develop"
   },
   "repository": {
     "type": "git",
@@ -22,15 +23,15 @@
   },
   "homepage": "https://github.com/jayzces/resume#readme",
   "devDependencies": {
-    "autoprefixer": "^9.7.4",
+    "autoprefixer": "^9.8.6",
     "bower": "^1.8.8",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.12",
     "cssnano": "^4.1.10",
     "gulp": "^4.0.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-postcss": "^8.0.0",
     "gulp-replace": "^1.0.0",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-terser": "^1.2.0"
+    "gulp-terser": "^1.3.2"
   }
 }
